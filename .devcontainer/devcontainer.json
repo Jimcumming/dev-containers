@@ -1,0 +1,11 @@
+{
+    "name": "dev-containers",
+    "image": "node:16.14.0",
+    "remoteUser": "node",
+    "extensions": [
+      "esbenp.prettier-vscode",
+      "dbaeumer.vscode-eslint",
+      "Prisma.prisma",
+      "yzhang.markdown-all-in-one"
+    ]
+  }
