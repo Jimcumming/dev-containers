@@ -1,11 +1,21 @@
 {
     "name": "dev-containers",
-    "image": "node:16.14.0",
+    "build": {
+      "dockerfile": "./Dockerfile"
+    },
+    "features": {
+      "docker-in-docker": "latest"
+    },
     "remoteUser": "node",
     "extensions": [
       "esbenp.prettier-vscode",
       "dbaeumer.vscode-eslint",
       "Prisma.prisma",
       "yzhang.markdown-all-in-one"
-    ]
+    ],
+    "mounts": [
+      "source=${localEnv:HOME}/.saml2aws,target=/home/node/.saml2aws,type=bind,consistency=cached",
+      "source=${localEnv:HOME}/.aws/,target=/home/node/.aws/,type=bind,consistency=cached"
+    ],
+    "postCreateCommand": "./setup.sh"
   }

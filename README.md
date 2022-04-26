@@ -1,5 +1,7 @@
 # dev-containers
 
+[![Open in Remote - Containers](https://img.shields.io/static/v1?label=Remote%20-%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/jimcumming/dev-containers)
+
 This workshop will guide you through setting up vscode dev containers to work with an existing project.
 
 It follows on from the Car Owner App presentation in the Engineering Huddle which you can find on [Coda](https://coda.io/d/Engineering_dvUWsMuBgNj/2022-04-14-Engineering-Huddle_suFas#_lujUe).
